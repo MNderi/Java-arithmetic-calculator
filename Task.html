@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <script>
+
+        function myCalculator(){
+
+        var sign,digitOne,digitTwo,result;
+
+         digitOne=window.prompt("Enter the first digit: ");
+         digitTwo=window.prompt("Enter second digit: ");
+         sign=window.prompt("Enter the operator: ");
+
+        digitOne=parseFloat(digitOne);
+        digitTwo=parseFloat(digitTwo);
+
+        if (sign=="+"){
+
+            result=digitOne+digitTwo;
+            alert(digitOne + "+" + digitTwo + "=" + result)
+        }
+        else if(sign=="-"){
+             result=digitOne+digitTwo;
+             alert(digitOne + "-" + digitTwo + "=" + result)
+
+
+
+        }
+        else if(sign=="*"){
+             result=digitOne*digitTwo;
+             alert(digitOne + "*" + digitTwo + "=" + result)
+
+
+        }
+
+        else if(sign=="/"){
+             result=digitOne/digitTwo;
+             alert(digitOne + "/" + digitTwo + "=" + result)
+
+
+        }
+        else if(sign=="%"){
+           result=digitOne%digitTwo;
+           alert(digitOne + "%" + digitTwo + "=" + result)
+
+
+        }
+        else{
+            alert("Unreconized operator")
+        }
+        
+        
+
+    }
+
+     </script>
+ 
+</head>
+
+<body>
+
+        <h1>That Calculator</h1>
+        <button onclick="myCalculator()">Start</button>
+    
+</body>
+
+
+</html>
